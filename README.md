@@ -1,1 +1,1 @@
-Personal academic website created by Chris "Le" Wang.
+Personal academic website created by Chris "Le" Wang, a senior undergraduate student at Johns Hopkins University majoring in computer science, physics, and applied math & statistics. Chris "Le" Wang is interested in pursuing a PhD in astronomy, specifically studying exoplanet formation and atmospheres through state-of-the-art numerical methods and telescopes.
