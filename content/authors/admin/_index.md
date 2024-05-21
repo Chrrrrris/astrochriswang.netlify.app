@@ -78,6 +78,6 @@ social:
 highlight_name: true
 ---
 
-My name is Chris "Le" Wang (王乐), a senior undergraduate student at Johns Hopkins University triple majoring in computer science, physics (with emphasis on astrophysics), and applied mathematics & statistics. My research focus is exoplanets, specifically their formation and atmospheres. I work with Professor <a href="http://www.kevinschlaufman.com/">Kevin Schlaufman </a> and Professor <a href="https://physics-astronomy.jhu.edu/directory/david-sing/">David Sing </a>.
+My name is Chris "Le" Wang (王乐), a senior undergraduate student at Johns Hopkins University triple majoring in computer science, physics (with emphasis on astrophysics), and applied mathematics & statistics. My research focus is exoplanets, specifically their formation and atmospheres. I work with <a href="http://www.kevinschlaufman.com/">Prof. Kevin Schlaufman </a> and Professor <a href="https://physics-astronomy.jhu.edu/directory/david-sing/">Prof. David Sing </a>.
 
 {style="text-align: justify;"}
