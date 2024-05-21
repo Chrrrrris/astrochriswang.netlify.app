@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Chris "Le" Wang
+title: Chris Le Wang
 
 # Name pronunciation (optional)
 name_pronunciation: ''
