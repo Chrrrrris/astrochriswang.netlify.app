@@ -1,12 +1,12 @@
 ---
 # Display name
-title: Chris Wang
+title: Chris "Le" Wang
 
 # Name pronunciation (optional)
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: Chris "Le"
+first_name: Chris
 last_name: Wang
 
 # Status emoji
