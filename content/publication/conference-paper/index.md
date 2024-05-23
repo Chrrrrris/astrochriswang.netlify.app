@@ -1,17 +1,20 @@
 ---
-title: 'An example conference paper'
+title: 'Test of Bell’s and Mermin’s inequalities on Quantum Computer'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - admin
-  - Robert Ford
+  - Yangping Zheng
+  - Xuesi Wang
+  - Chris "Le" Wang
+  - Diyang Bai
+  - Lingyu Gu
 
 # Author notes (optional)
-author_notes:
-  - 'Equal contribution'
-  - 'Equal contribution'
+# author_notes:
+#   - 'Equal contribution'
+#   - 'Equal contribution'
 
 date: '2013-07-01T00:00:00Z'
 doi: ''

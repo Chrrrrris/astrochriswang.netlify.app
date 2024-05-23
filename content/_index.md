@@ -4,6 +4,10 @@ title: ''
 date: 2022-10-24
 type: landing
 
+design:
+  # Default section spacing
+  spacing: "6rem"
+
 sections:
   - block: hero
     demo: true # Only display this section in the Hugo Blox Builder demo site
@@ -42,118 +46,182 @@ sections:
       title: Biography
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
-  - block: skills
-    content:
-      title: Skills
-      text: ''
-      # Choose a user to display skills from (a folder name within `content/authors/`)
-      username: admin
-    design:
-      columns: '1'
-  - block: experience
-    content:
-      title: Experience
-      # Date format for experience
-      #   Refer to https://docs.hugoblox.com/customization/#date-format
-      date_format: Jan 2006
-      # Experiences.
-      #   Add/remove as many `experience` items below as you like.
-      #   Required fields are `title`, `company`, and `date_start`.
-      #   Leave `date_end` empty if it's your current employer.
-      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
-      items:
-        - title: CEO
-          company: GenCoin
-          company_url: ''
-          company_logo: org-gc
-          location: California
-          date_start: '2021-01-01'
-          date_end: ''
-          description: |2-
-              Responsibilities include:
 
-              * Analysing
-              * Modelling
-              * Deploying
-        - title: Professor of Semiconductor Physics
-          company: University X
-          company_url: ''
-          company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
-          description: Taught electronic engineering and researched semiconductor physics.
     design:
-      columns: '2'
-  - block: accomplishments
+      # css_class: dark
+      background:
+        image:
+          filename: exo.jpg
+          filters:
+            brightness: 0.5
+          size: cover
+          position: center
+          parallax: false
+  - block: markdown
+    id: news
     content:
-      # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-      title: 'Accomplish&shy;ments'
-      subtitle:
-      # Date format: https://docs.hugoblox.com/customization/#date-format
-      date_format: Jan 2006
-      # Accomplishments.
-      #   Add/remove as many `item` blocks below as you like.
-      #   `title`, `organization`, and `date_start` are the required parameters.
-      #   Leave other parameters empty if not required.
-      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
-      items:
-        - certificate_url: https://www.coursera.org
-          date_end: ''
-          date_start: '2021-01-25'
-          description: ''
-          icon: coursera
-          organization: Coursera
-          organization_url: https://www.coursera.org
-          title: Neural Networks and Deep Learning
-          url: ''
-        - certificate_url: https://www.edx.org
-          date_end: ''
-          date_start: '2021-01-01'
-          description: Formulated informed blockchain models, hypotheses, and use cases.
-          icon: edx
-          organization: edX
-          organization_url: https://www.edx.org
-          title: Blockchain Fundamentals
-          url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-        - certificate_url: https://www.datacamp.com
-          date_end: '2020-12-21'
-          date_start: '2020-07-01'
-          description: ''
-          icon: datacamp
-          organization: DataCamp
-          organization_url: https://www.datacamp.com
-          title: 'Object-Oriented Programming in R'
-          url: ''
+      title: <br><br> Recent News
+      text: |-
+        <div class="table-responsive">
+              <table class="table table-sm table-borderless">
+                 <tr>
+                  <th scope="row">May 12, 2024</th>
+                  <td>
+                    My junior year is officially over! Time flies.... I am back in China for about two months, you may see my emails at weird hours 😈
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">April 30, 2024</th>
+                  <td>
+                    My project on computational study of accretion modes of planet formation was awarded the 2024 IDIES Summer Student Fellowship!
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">April 26, 2024</th>
+                  <td>
+                    I presented my research on data reduction pipeline for JWST NIRISS SOSS at Physics Departmental Poster Showcase.
+                </td>
+                </tr>
+                <tr>
+                  <th scope="row">April 17, 2024</th>
+                  <td>
+                    I presented my research on 1. relation between planet formation and stellar elemental abundance and 2. WASP-96b atmospheres with JWST at DREAMS symposium 2024.
+                  </td>
+                </tr>
+              </table>
+            </div>
     design:
-      columns: '2'
+      css_class: dark
+      # background:
+      #   color: black
+      columns: "2"
+      spacing:
+        # padding: [0, 0 , 0, 0]
+        position: center
   - block: collection
-    id: posts
+    id: publication
     content:
-      title: Recent Posts
-      subtitle: ''
-      text: ''
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 5
-      # Filter on criteria
+      title: Recent Publications
+      text: |-
+        {{% callout note %}}
+        Quickly discover relevant content by [filtering publications](./publication/).
+        {{% /callout %}}
       filters:
         folders:
-          - post
-        author: ""
-        category: ""
-        tag: ""
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ""
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
+          - publication
+        exclude_featured: true
     design:
-      # Choose a layout view
-      view: compact
       columns: '2'
+      view: citation
+
+  # - block: collection
+  #   id: news
+  #   content:
+  #     title: Recent News
+  #     subtitle: ''
+  #     text: ''
+  #     # Page type to display. E.g. post, talk, publication...
+  #     page_type: post
+  #     # Choose how many pages you would like to display (0 = all pages)
+  #     count: 5
+  #     # Filter on criteria
+  #     filters:
+  #       author: ""
+  #       category: ""
+  #       tag: ""
+  #       exclude_featured: false
+  #       exclude_future: false
+  #       exclude_past: false
+  #       publication_type: ""
+  #     # Choose how many pages you would like to offset by
+  #     offset: 0
+  #     # Page order: descending (desc) or ascending (asc) date.
+  #     order: desc
+  #   design:
+  #     # Choose a layout view
+  #     # view: date-title-summary
+  #     # Reduce spacing
+  #     columns: '1'
+  #     spacing:
+  #       padding: [0, 0 , 0, 0]
+  #       position: center
+  # - block: experience
+  #   content:
+  #     title: Experience
+  #     # Date format for experience
+  #     #   Refer to https://docs.hugoblox.com/customization/#date-format
+  #     date_format: Jan 2006
+  #     # Experiences.
+  #     #   Add/remove as many `experience` items below as you like.
+  #     #   Required fields are `title`, `company`, and `date_start`.
+  #     #   Leave `date_end` empty if it's your current employer.
+  #     #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
+  #     items:
+  #       - title: CEO
+  #         company: GenCoin
+  #         company_url: ''
+  #         company_logo: org-gc
+  #         location: California
+  #         date_start: '2021-01-01'
+  #         date_end: ''
+  #         description: |2-
+  #             Responsibilities include:
+
+  #             * Analysing
+  #             * Modelling
+  #             * Deploying
+  #       - title: Professor of Semiconductor Physics
+  #         company: University X
+  #         company_url: ''
+  #         company_logo: org-x
+  #         location: California
+  #         date_start: '2016-01-01'
+  #         date_end: '2020-12-31'
+  #         description: Taught electronic engineering and researched semiconductor physics.
+  #   design:
+  #     columns: '2'
+  # - block: accomplishments
+  #   content:
+  #     # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
+  #     title: 'Accomplish&shy;ments'
+  #     subtitle:
+  #     # Date format: https://docs.hugoblox.com/customization/#date-format
+  #     date_format: Jan 2006
+  #     # Accomplishments.
+  #     #   Add/remove as many `item` blocks below as you like.
+  #     #   `title`, `organization`, and `date_start` are the required parameters.
+  #     #   Leave other parameters empty if not required.
+  #     #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
+  #     items:
+  #       - certificate_url: https://www.coursera.org
+  #         date_end: ''
+  #         date_start: '2021-01-25'
+  #         description: ''
+  #         icon: coursera
+  #         organization: Coursera
+  #         organization_url: https://www.coursera.org
+  #         title: Neural Networks and Deep Learning
+  #         url: ''
+  #       - certificate_url: https://www.edx.org
+  #         date_end: ''
+  #         date_start: '2021-01-01'
+  #         description: Formulated informed blockchain models, hypotheses, and use cases.
+  #         icon: edx
+  #         organization: edX
+  #         organization_url: https://www.edx.org
+  #         title: Blockchain Fundamentals
+  #         url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
+  #       - certificate_url: https://www.datacamp.com
+  #         date_end: '2020-12-21'
+  #         date_start: '2020-07-01'
+  #         description: ''
+  #         icon: datacamp
+  #         organization: DataCamp
+  #         organization_url: https://www.datacamp.com
+  #         title: 'Object-Oriented Programming in R'
+  #         url: ''
+  #   design:
+  #     columns: '2'
   - block: portfolio
     id: projects
     content:
@@ -189,46 +257,11 @@ sections:
         {{< gallery album="demo" >}}
     design:
       columns: '1'
-  - block: collection
-    id: featured
-    content:
-      title: Featured Publications
-      filters:
-        folders:
-          - publication
-        featured_only: true
-    design:
-      columns: '2'
-      view: card
-  - block: collection
-    content:
-      title: Recent Publications
-      text: |-
-        {{% callout note %}}
-        Quickly discover relevant content by [filtering publications](./publication/).
-        {{% /callout %}}
-      filters:
-        folders:
-          - publication
-        exclude_featured: true
-    design:
-      columns: '2'
-      view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - event
-    design:
-      columns: '2'
-      view: compact
-  - block: tag_cloud
-    content:
-      title: Popular Topics
-    design:
-      columns: '2'
+  # - block: tag_cloud
+  #   content:
+  #     title: Popular Topics
+  #   design:
+  #     columns: '2'
   - block: contact
     id: contact
     content:
@@ -280,4 +313,5 @@ sections:
           captcha: false
     design:
       columns: '2'
+
 ---
