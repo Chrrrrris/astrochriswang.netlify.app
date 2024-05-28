@@ -7,7 +7,7 @@
 
 appearance:
   theme_default: dark
-  # theme_night: dark
+  theme_night: dark
   # theme_day: light
   font: minimal
   font_size: S
@@ -47,7 +47,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© 2024 Chris "Le" Wang .'
     license:
       enable: true
       allow_derivatives: false
