@@ -1,12 +1,12 @@
 ---
 # Display name
-title: Chris Le Wang
+title: Le-Chris Wang
 
 # Name pronunciation (optional)
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: Chris Le
+first_name: Le-Chris
 last_name: Wang
 
 # Status emoji
@@ -28,7 +28,7 @@ organizations:
   
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include planet formation, exoplanet atmospheres, galactic archeology, and data mining in astronomy.
+bio: My research interests include planet formation, demographics, exoplanet atmospheres, galactic archeology, and data mining in astronomy.
 
 # Interests to show in About widget
 interests:
@@ -89,7 +89,7 @@ highlight_name: true
 }
 </style>
 
-My name is Chris "Le" Wang (王乐). I am a senior undergraduate student at Johns Hopkins University triple majoring in computer science, physics (with emphasis on astrophysics), and applied mathematics & statistics. My research focus is exoplanets, specifically their formation and atmospheres. I am especially interested in how planets like the Earth came into being, and whether there exists similar worlds like ours in the universe. I use both numerical simulations to study the theoretical outcomes of planet formation and a combination of space-based and ground-based observations to characterize exoplanets.
+My name is Le-Chris Wang (王乐). I am an incoming PhD student at Astrophysical Science Department of Princeton University. I am currently a senior undergraduate student at Johns Hopkins University double majoring in computer science, physics (with emphasis on astrophysics) with minors in mathematics and applied mathematics and statistics. My research focus is exoplanets, specifically their formation and atmospheres. I am especially interested in how planets like the Earth came into being, and whether there exists similar worlds like ours in the universe. I use both numerical simulations to study the theoretical outcomes of planet formation and a combination of space-based and ground-based observations to characterize exoplanets.
 
 At Hopkins, I work with <a href="http://www.kevinschlaufman.com/" class = "link">Prof. Kevin Schlaufman </a> and <a href="https://www.jhuapl.edu/about/people/matt-clement" class = "link">Dr. Matthew Clement </a> on theories of planet formation. I also work with <a href="https://physics-astronomy.jhu.edu/directory/david-sing/" class = "link">Prof. David Sing</a> and <a href="https://zafarrustamkulov.com/" class = "link">Zafar Rustamkulov </a> on exoplanet atmospheres with JWST and a variety of ground-based observatories. 
 
