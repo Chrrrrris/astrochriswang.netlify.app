@@ -16,8 +16,8 @@ authors:
   - Zafar Rustamkulov
   - David K. Sing
 
-date: "2021-02-19"
-doi: "10.1088/1755-1315/658/1/012051"
+date: "2025-04-28"
+doi: "10.48550/arXiv.2504.13997"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2025-04-28"
