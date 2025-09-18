@@ -17,14 +17,14 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Senior Undergraduate Student
+role: Graduate Student
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Computer Science, Physics, and Applied Mathematics & Statistics
+  - name: Astrophysical Sciences
     url: ''
-  - name: Department of Physics & Astronomy, Johns Hopkins University
-    url: https://physics-astronomy.jhu.edu/
+  - name: Princeton University
+    url: https://web.astro.princeton.edu/
   
 
 # Short bio (displayed in user profile at end of posts)
@@ -42,7 +42,10 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: BSc in Computer Science, Physics, and Applied Mathematics & Statistics (GPA 3.95/4.0)
+    - course: PhD in Astrophysical Sciences
+      institution: Princeton University
+      year: 2030
+    - course: BSc in Computer Science and Physics, minors in Applied Mathematics & Statistics and Pure Mathematics (GPA 3.94/4.0)
       institution: Johns Hopkins University
       year: 2025
     - course: Cambridge AICE & Chinese High School Diploma (GPA 4.0/4.0)
@@ -89,8 +92,8 @@ highlight_name: true
 }
 </style>
 
-My name is Le-Chris Wang (王乐). I am an incoming PhD student (Fall 2025) at <a href="https://web.astro.princeton.edu/" class = "link">Astrophysical Science Department of Princeton University</a>. I am currently a senior undergraduate student at <a href="https://www.jhu.edu/" class = "link">Johns Hopkins University</a> double majoring in computer science, physics (with emphasis on astrophysics) with minors in mathematics and applied mathematics and statistics. My research focus is exoplanets, specifically their formation and atmospheres. I am especially interested in how planets like the Earth came into being, and whether there exists similar worlds like ours in the universe. I use both numerical simulations to study the theoretical outcomes of planet formation and a combination of space-based and ground-based observations to characterize exoplanets.
+My name is Le-Chris Wang (王乐). I am a first-year PhD student at <a href="https://web.astro.princeton.edu/" class = "link">Astrophysical Science Department of Princeton University</a>. My research focus is exoplanets, specifically their formation, demographics, and atmospheres. I use both numerical simulations to study the theoretical outcomes of planet formation and a combination of space-based and ground-based observations to characterize exoplanets.
 
-At Hopkins, I work with <a href="http://www.kevinschlaufman.com/" class = "link">Prof. Kevin Schlaufman </a> and <a href="https://www.jhuapl.edu/about/people/matt-clement" class = "link">Dr. Matthew Clement </a> on theories of planet formation. I also work with <a href="https://physics-astronomy.jhu.edu/directory/david-sing/" class = "link">Prof. David Sing</a> and <a href="https://zafarrustamkulov.com/" class = "link">Zafar Rustamkulov </a> on exoplanet atmospheres with JWST and a variety of ground-based observatories. 
+During my undergrad at Hopkins, I worked with <a href="http://www.kevinschlaufman.com/" class = "link">Prof. Kevin Schlaufman </a> and <a href="https://www.jhuapl.edu/about/people/matt-clement" class = "link">Dr. Matthew Clement </a> on theories of planet formation. I also worked with <a href="https://physics-astronomy.jhu.edu/directory/david-sing/" class = "link">Prof. David Sing</a> and <a href="https://zafarrustamkulov.com/" class = "link">Zafar Rustamkulov </a> on exoplanet atmospheres with JWST and a variety of ground-based observatories. 
 
 {style="text-align: justify;"}
