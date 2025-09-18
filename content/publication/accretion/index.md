@@ -44,7 +44,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: ''
+url_pdf: 'https://iopscience.iop.org/article/10.3847/2041-8213/adf282/pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
