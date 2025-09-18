@@ -9,15 +9,12 @@ authors:
   - Matthew Clement
   - admin
   - Jesse Gu
-author_notes:
-- ""
-- ""
-- ""
+
 date: "2025-09-20"
 doi: "10.3847/2041-8213/adf282"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2025-09-20"
+publishDate: "2025-09-17"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -74,8 +71,3 @@ projects: []
 #   Otherwise, set `slides: ""`.
 # slides: example
 ---
-
-{{% callout note %}}
-This was a paper I had for high school science fair.
-{{% /callout %}}
-
