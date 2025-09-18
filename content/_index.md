@@ -64,6 +64,17 @@ sections:
       text: |-
         <div class="table-responsive">
               <table class="table table-sm table-borderless">
+                <tr>
+                  <th scope="row">Sept 2, 2025</th>
+                  <td>
+                    Started Graduate school at Princeton University 🐯!
+                  </td>
+                <tr>
+                  <th scope="row">May 22, 2025</th>
+                  <td>
+                    Graduated from Johns Hopkins University 🐦 with double majors in physics and computer science and minors in pure math and applied math 🎓!
+                  </td>
+                </tr>
                  <tr>
                   <th scope="row">May 12, 2024</th>
                   <td>
@@ -211,7 +222,7 @@ sections:
               Area of expertise: exoplanet atmosphere and observational astronomy.
               * Incorporated nested sampling and MCMC with gaussian prior to FIREFLy (group's JWST reduction pipeline). 
               * Developed FIREFLy to be capable of JWST NIRISS-SOSS data.
-              * Extracted transmission spectra for HAT-P-14b <b>(Liu & Wang et al., in prep)</b>, WASP-96b <b>(Wang et al., in prep)</b>, and K2-18b <b>(Schmidt et al., in prep)</b> with JWST NIRISS SOSS. Performed atmospheric retrieval jointly with data from various other observatories, e.g. VLT, HST, Spitzer, JWST-NIRSpec.
+              * Extracted transmission spectra for HAT-P-14b <b>(Liu & Wang et al., 2025)</b>, WASP-96b <b>(Wang et al., Submitted)</b>, and K2-18b <b>(Schmidt et al., 2025)</b> with JWST NIRISS SOSS. Performed atmospheric retrieval jointly with data from various other observatories, e.g. VLT, HST, Spitzer, JWST-NIRSpec.
         - title: Undergraduate Researcher (2023 Summer PURA Fellow, 2023-24 AY Dean's ASPIRE Fellow, 2024 Summer IDIES Summer Student Fellow)
           company: Kevin Schlaufman's Exoplanet Group
           company_url: 'https://physics-astronomy.jhu.edu/'
