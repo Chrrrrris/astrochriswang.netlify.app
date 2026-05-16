@@ -542,7 +542,7 @@ const photoCollections = [
   },
   {
     title: 'Astrophotography',
-    description: 'Observatory and sky images, usually processed after observing runs.',
+    description: '',
     photos: [
       {
         title: 'M51',
@@ -801,7 +801,7 @@ function HomePage({ navigate }) {
                 <a href="https://web.astro.princeton.edu/">
                   Astrophysical Science Department of Princeton University
                 </a>
-                . My research focus is exoplanets, specifically their formation, demographics, and
+                . My research focus is exoplanets, specifically their formation, dynamics, demographics, and
                 atmospheres. I use both numerical simulations to study the theoretical outcomes of
                 planet formation and a combination of space-based and ground-based observations to
                 characterize exoplanets.
@@ -893,7 +893,7 @@ function PublicationsPage() {
       <PageTitle
         eyebrow="Research"
         title="Publications"
-        description="Selected papers and preprints."
+        description=""
         action={
           <div className="scholarly-links">
             {scholarlyLinks.map((link) => (

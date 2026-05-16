@@ -335,25 +335,23 @@ p {
 }
 
 .icon-list {
+  color: var(--ink);
   display: grid;
-  gap: 5px;
-  list-style: none;
+  gap: 6px;
+  list-style: disc;
   margin: 0;
-  padding: 0;
+  padding-left: 20px;
 }
 
 .icon-list li {
-  align-items: center;
   color: var(--ink);
-  display: flex;
   font-size: 0.9rem;
   font-weight: 400;
-  gap: 8px;
+  line-height: 1.4;
 }
 
 .icon-list svg {
-  fill: var(--ink);
-  flex: 0 0 auto;
+  display: none;
 }
 
 .education-stack {
@@ -804,7 +802,9 @@ p {
 }
 
 .cv-page .page-section {
-  background: #1b1b1d;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0)),
+    var(--bg);
   padding-top: 126px;
 }
 
@@ -816,8 +816,8 @@ p {
 
 .cv-tabs {
   align-self: start;
-  background: rgba(27, 27, 29, 0.78);
-  border: 1px solid rgba(47, 159, 194, 0.22);
+  background: rgba(23, 26, 37, 0.82);
+  border: 1px solid rgba(255, 95, 154, 0.22);
   border-radius: 6px;
   display: grid;
   gap: 12px;
@@ -846,13 +846,13 @@ p {
 .cv-tabs a:hover,
 .cv-tabs a:focus-visible,
 .cv-tabs a.is-active {
-  color: #7ed0ec;
+  color: var(--accent);
   outline: none;
 }
 
 .cv-tabs a.is-active {
-  background: rgba(47, 159, 194, 0.12);
-  border-left-color: #2f9fc2;
+  background: rgba(255, 95, 154, 0.12);
+  border-left-color: var(--accent);
 }
 
 .cv-content {
@@ -879,21 +879,22 @@ p {
 
 .pdf-icon-link {
   align-items: center;
-  color: #2f9fc2;
+  color: var(--accent);
   display: grid;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 900;
+  gap: 5px;
   justify-items: center;
   line-height: 1;
 }
 
 .pdf-icon-link span {
-  margin-top: -10px;
+  margin-top: 0;
 }
 
 .cv-panel {
-  background: #22252b;
-  border: 1px solid #3b3e49;
+  background: var(--panel-solid);
+  border: 1px solid var(--line);
   border-radius: 6px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
   padding: 24px;
@@ -935,7 +936,7 @@ p {
 }
 
 .cv-item {
-  border-bottom: 1px solid #454852;
+  border-bottom: 1px solid var(--line);
   padding-bottom: 18px;
 }
 
@@ -946,9 +947,9 @@ p {
 
 .cv-item time {
   align-self: start;
-  background: #2f9fc2;
+  background: var(--accent);
   border-radius: 3px;
-  color: #1b1b1d;
+  color: #101018;
   display: inline-flex;
   font-weight: 900;
   justify-content: center;
@@ -1326,7 +1327,7 @@ p {
 
 .project-card:not(.is-static):hover,
 .project-card:not(.is-static):focus-visible {
-  border-color: rgba(47, 159, 194, 0.66);
+  border-color: rgba(255, 95, 154, 0.66);
   box-shadow: 0 20px 42px rgba(0, 0, 0, 0.28);
   outline: none;
   transform: translateY(-2px);
@@ -1382,7 +1383,7 @@ p {
 
 .project-card-action {
   align-items: center;
-  color: #7ed0ec;
+  color: var(--accent);
   display: inline-flex;
   font-size: 0.86rem;
   font-weight: 850;
@@ -1399,7 +1400,7 @@ p {
 }
 
 .project-back-link {
-  color: #7ed0ec;
+  color: var(--accent);
   display: inline-block;
   font-size: 0.95rem;
   font-weight: 800;
@@ -1408,7 +1409,7 @@ p {
 
 .project-back-link:hover,
 .project-back-link:focus-visible {
-  color: #a7e6f8;
+  color: var(--accent-strong);
   outline: none;
 }
 
@@ -1419,7 +1420,7 @@ p {
 }
 
 .project-detail-category {
-  color: #7ed0ec;
+  color: var(--accent);
   font-size: 0.78rem;
   font-weight: 850;
   letter-spacing: 0.08em;
@@ -1445,7 +1446,7 @@ p {
 }
 
 .project-detail-subtitle {
-  color: #7ed0ec;
+  color: var(--accent);
   font-weight: 800;
   margin-bottom: 10px;
 }
@@ -1504,9 +1505,9 @@ p {
 
 .project-detail-links a {
   align-items: center;
-  border: 1px solid rgba(47, 159, 194, 0.48);
+  border: 1px solid rgba(255, 95, 154, 0.48);
   border-radius: 999px;
-  color: #7ed0ec;
+  color: var(--accent);
   display: inline-flex;
   font-weight: 850;
   gap: 8px;
@@ -1516,7 +1517,7 @@ p {
 
 .project-detail-links a:hover,
 .project-detail-links a:focus-visible {
-  background: rgba(47, 159, 194, 0.12);
+  background: rgba(255, 95, 154, 0.12);
   outline: none;
 }
 
@@ -1629,8 +1630,8 @@ p {
   }
 
   .cv-tabs a.is-active {
-    background: rgba(47, 159, 194, 0.14);
-    border-color: #2f9fc2;
+    background: rgba(255, 95, 154, 0.14);
+    border-color: var(--accent);
   }
 
   .cv-content {
