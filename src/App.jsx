@@ -19,6 +19,7 @@ import {
 import atmosphereImage from '../assets/media/atmospheres.jpeg';
 import formationImage from '../assets/media/formation.jpg';
 import dynamicsImage from '../assets/media/dynamics.jpg';
+import jwstImage from '../assets/media/JWST.jpg';
 
 import heroImage from '../assets/media/exo.jpg';
 import avatarImage from '../content/authors/admin/avatar.jpg';
@@ -29,10 +30,19 @@ import eclipseImage from '../content/project/astrophoto/Eclipse.jpg';
 import m51Image from '../content/project/astrophoto/M51.JPG';
 import ngc2403Image from '../content/project/astrophoto/NGC2403.JPG';
 import orionImage from '../content/project/astrophoto/Orion.jpg';
-import dailyPhotoOne from '../assets/media/albums/demo1/IMG_0796.jpg';
 import dailyPhotoTwo from '../assets/media/albums/demo1/IMG_0797.jpg';
 import dailyPhotoThree from '../assets/media/albums/demo1/IMG_0798.jpg';
-import dailyPhotoFour from '../assets/media/albums/demo1/IMG_0799.jpg';
+import princetonCohortPhoto from '../assets/media/albums/demo1/princeton.JPG';
+import kevinPhoto from '../assets/media/albums/demo1/kevin.jpg';
+import gordonPhoto from '../assets/media/albums/demo1/Gordon.JPG';
+import rosiePhoto from '../assets/media/albums/demo1/IMG_6844.jpg';
+import singGroupPhoto from '../assets/media/albums/demo1/IMG_6819.JPG';
+import collaboratorsPhoto from '../assets/media/albums/demo1/IMG_1744.JPG';
+import musicDynastyPhoto from '../assets/media/albums/demo1/IMG_9727.JPG';
+import italyPhoto from '../assets/media/albums/demo1/IMG_0803.jpg';
+import westLakePhoto from '../assets/media/albums/demo1/IMG_4677.JPG';
+import londonPhoto from '../assets/media/albums/demo1/IMG_5138.JPG';
+import cometPhoto from '../assets/media/albums/demo1/IMG_2979.JPG';
 import citationCounts from './citation-counts.json';
 
 const navItems = [
@@ -443,6 +453,36 @@ const projectGroups = [
       'Tools, applications, and creative projects outside my main research program.',
     items: [
       {
+        slug: 'firefly',
+        title: 'FIREFLy',
+        subtitle: 'Fast InfraRed Exoplanet Fitting Lyghtcurve',
+        summary:
+          'State-of-the-art JWST data reduction pipeline for exoplanet transmission spectroscopy.',
+        tags: ['JWST', 'Software', 'Transmission Spectroscopy'],
+        year: '2022 - present',
+        image: jwstImage,
+        // action: { type: 'page', label: 'Read more' },
+        action: { type: 'none'},
+        detailSections: [
+          {
+            heading: 'Overview',
+            body:
+              'FIREFLy is a JWST data reduction pipeline for exoplanet transmission spectroscopy. It supports precision time-series spectroscopy workflows used to extract and fit transit light curves from JWST observations.'
+          },
+          {
+            heading: 'My role',
+            body:
+              'I am one of the major developers of FIREFLy and developed the NIRISS SOSS pipeline support, expanding FIREFLy for slitless JWST SOSS observations.'
+          },
+          {
+            heading: 'Science use',
+            body:
+              'FIREFLy helps turn raw JWST time-series observations into transmission spectra that can be used to study atmospheric composition, clouds, hazes, and wavelength-dependent transit depths.'
+          }
+        ],
+        links: [{ label: 'Publications', href: '/publications/' }]
+      },
+      {
         slug: 'arctos',
         title: 'ARCTOS',
         subtitle: 'Apache Point Observatory Reduction and Calibration Tool S',
@@ -526,18 +566,18 @@ const photoCollections = [
     title: 'Gallery',
     description: '',
     photos: [
-      { title: 'My Princeton Astro Cohort; the best cohort ever', image: '../assets/media/albums/demo1/princeton.jpg', description: '' },
-      { title: 'Prof Kevin Schlaufman, JHU; my first research advisor', image: '../assets/media/albums/demo1/kevin.jpg', description: '' },
-      { title: 'My first academic conference in my sophomore year, with Kevin', image: '../assets/media/albums/demo1/Gordon.JPG', description: '' },
-      { title: 'Prof Rosie Wyse, JHU; she taught me the most astronomy', image: '../assets/media/albums/demo1/IMG_6844.jpg', description: '' },
-      { title: 'Sing Group, JHU', image: '../assets/media/albums/demo1/IMG_6819.JPG', description: '' },
-      { title: 'Zafar, David, and Rongrong, JHU; my closest collaborators and best astro friends', image: '../assets/media/albums/demo1/IMG_1744.JPG', description: '' },
-      { title: 'Music Dynasty, my A Cappella family', image: '../assets/media/albums/demo1/IMG_9727.JPG', description: '' },
+      { title: 'My Princeton Astro Cohort; the best cohort ever', image: princetonCohortPhoto, description: '' },
+      { title: 'Prof Kevin Schlaufman, JHU; my first research advisor', image: kevinPhoto, description: '' },
+      { title: 'My first academic conference in my sophomore year, with Kevin', image: gordonPhoto, description: '' },
+      { title: 'Prof Rosie Wyse, JHU; she taught me the most astronomy', image: rosiePhoto, description: '' },
+      { title: 'Sing Group, JHU', image: singGroupPhoto, description: '' },
+      { title: 'Zafar, David, and Rongrong, JHU; my closest collaborators and best astro friends', image: collaboratorsPhoto, description: '' },
+      { title: 'Music Dynasty, my A Cappella family', image: musicDynastyPhoto, description: '' },
       { title: 'NYC', image: dailyPhotoTwo, description: '' },
       { title: 'Washington D.C.', image: dailyPhotoThree, description: '' },
-      { title: 'Italy', image: '../assets/media/albums/demo1/IMG_0803.jpg', description: '' },
-      { title: 'West Lake, Hangzhou; my hometown', image: '../assets/media/albums/demo1/IMG_4677.jpg', description: '' },
-      { title: 'London', image: '../assets/media/albums/demo1/IMG_5138.JPG', description: '' },
+      { title: 'Italy', image: italyPhoto, description: '' },
+      { title: 'West Lake, Hangzhou; my hometown', image: westLakePhoto, description: '' },
+      { title: 'London', image: londonPhoto, description: '' },
     ]
   },
   {
@@ -566,7 +606,7 @@ const photoCollections = [
       },
       {
         title: 'C/2023 A3',
-        image: '../assets/media/albums/demo1/IMG_2979.JPG',
+        image: cometPhoto,
         description: 'Shot on my balcony.'
       }
     ]
