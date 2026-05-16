@@ -1298,9 +1298,9 @@ function ContactPage() {
               <button type="submit">Send</button>
             </form>
             <div className="contact-links">
-              <a href="mailto:lwang178@jhu.edu">
+              <a href="mailto:lechris.wang@princeton.edu">
                 <Mail size={30} />
-                lwang178@jhu.edu
+                lechris.wang@princeton.edu
               </a>
               <a href="https://twitter.com/ChrrrrrisWang">
                 <span className="contact-x">X</span>
