@@ -1,3 +1,19 @@
-Personal academic website created by Chris "Le" Wang, a senior undergraduate student at Johns Hopkins University majoring in computer science, physics, and applied math & statistics. Chris "Le" Wang is interested in pursuing a PhD in astrophysics, specifically studying exoplanet formation and atmospheres through state-of-the-art numerical methods and both ground-based and space-based telescopes.
+Personal academic website for Le-Chris Wang, a PhD student in astrophysical sciences at Princeton University studying exoplanet formation, atmospheres, demographics, and astronomical data.
 
 View my latest website  <a href="https://astrochriswang.netlify.app">here</a>.
+
+## Development
+
+This site now builds as a React app with Vite.
+
+```bash
+npm install
+npm run dev
+npm run build
+```
+
+Citation counts can be synced from NASA ADS with:
+
+```bash
+ADS_TOKEN=your_ads_api_token npm run sync:citations
+```
