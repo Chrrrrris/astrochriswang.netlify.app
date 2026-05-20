@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   ArrowUpRight,
   BookOpen,
@@ -88,6 +88,13 @@ const profile = {
 
 const lastUpdated = 'May 16, 2026';
 
+const goatCounterAnalytics = {
+  host: import.meta.env.VITE_GOATCOUNTER_HOST || 'astrochriswang.com',
+  endpoint: import.meta.env.VITE_GOATCOUNTER_ENDPOINT || 'https://astrochriswang.goatcounter.com/count',
+  scriptSrc: import.meta.env.VITE_GOATCOUNTER_SCRIPT_SRC || 'https://gc.zgo.at/count.js',
+  trackLocal: import.meta.env.VITE_GOATCOUNTER_TRACK_LOCAL === 'true'
+};
+
 const news = [
   {
     date: 'Sept 2, 2025',
@@ -160,6 +167,12 @@ const experience = [
 ];
 
 const honors = [
+  {
+    year: '2025',
+    items: [
+      'First-Year Fellowship in the Natural Sciences and Engineering, Princeton University'
+    ]
+  },
   {
     year: '2024',
     items: [
@@ -646,6 +659,89 @@ const scrollToHash = (hash) => {
   }, 50);
 };
 
+const normalizeHostnameForAnalytics = (value) =>
+  value
+    .replace(/^https?:\/\//, '')
+    .replace(/\/.*$/, '')
+    .replace(/^www\./, '')
+    .toLowerCase();
+
+const getAnalyticsPath = () => `${window.location.pathname}${window.location.search}${window.location.hash}`;
+
+const shouldRunAnalytics = ({ host, trackLocal }) => {
+  const hostname = window.location.hostname;
+  const isLocalHost =
+    hostname === 'localhost' || hostname === '127.0.0.1' || hostname.endsWith('.local');
+
+  if (trackLocal) {
+    return true;
+  }
+
+  if (isLocalHost) {
+    return false;
+  }
+
+  return !host || normalizeHostnameForAnalytics(hostname) === normalizeHostnameForAnalytics(host);
+};
+
+function GoatCounterAnalytics({ path, hash }) {
+  const [scriptReady, setScriptReady] = useState(() => Boolean(window.goatcounter?.count));
+  const lastTrackedPath = useRef('');
+
+  useEffect(() => {
+    const { endpoint, scriptSrc, trackLocal } = goatCounterAnalytics;
+    if (!endpoint || !scriptSrc || !shouldRunAnalytics(goatCounterAnalytics)) {
+      return undefined;
+    }
+
+    const existingScript = document.querySelector('script[data-site-analytics="goatcounter"]');
+    if (existingScript) {
+      setScriptReady(Boolean(window.goatcounter?.count));
+      return undefined;
+    }
+
+    window.goatcounter = {
+      ...(window.goatcounter || {}),
+      endpoint,
+      no_onload: true,
+      allow_local: trackLocal
+    };
+
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = scriptSrc;
+    script.dataset.goatcounter = endpoint;
+    script.dataset.goatcounterSettings = JSON.stringify({
+      no_onload: true,
+      allow_local: trackLocal
+    });
+    script.dataset.siteAnalytics = 'goatcounter';
+    script.addEventListener('load', () => setScriptReady(true), { once: true });
+    document.head.appendChild(script);
+
+    return undefined;
+  }, []);
+
+  useEffect(() => {
+    if (!scriptReady || !shouldRunAnalytics(goatCounterAnalytics) || !window.goatcounter?.count) {
+      return;
+    }
+
+    const currentPath = getAnalyticsPath();
+    if (lastTrackedPath.current === currentPath) {
+      return;
+    }
+
+    lastTrackedPath.current = currentPath;
+    window.goatcounter.count({
+      path: currentPath,
+      title: document.title
+    });
+  }, [scriptReady, path, hash]);
+
+  return null;
+}
+
 function ScrollProgress({ path }) {
   const [progress, setProgress] = useState(0);
 
@@ -750,6 +846,7 @@ function App() {
 
   return (
     <div className="app">
+      <GoatCounterAnalytics path={path} hash={hash} />
       <ScrollProgress path={path} />
       <header className="site-header">
         <a className="brand" href="/" onClick={(event) => navigate(event, '/')}>
