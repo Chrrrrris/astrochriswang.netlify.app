@@ -224,7 +224,25 @@ const publications = [
       { label: 'PDF', href: 'https://arxiv.org/pdf/2511.16771' }
     ]
   },
-
+  {
+    contribution: 'contributing',
+    citationCount: null,
+    year: '2025',
+    status: 'AJ',
+    title: "A Comprehensive Reanalysis of K2-18 b's JWST NIRISS+NIRSpec Transmission Spectrum",
+    authors: 'Stephen P. Schmidt, Ryan J. MacDonald, Shang-Min Tsai, Michael Radica, Le-Chris Wang, et al.',
+    venue: 'The Astronomical Journal ',
+    journalLine: '2025, Astronomical Journal',
+    identifier: 'doi:10.3847/1538-3881/ae019a',
+    month: 'Dec 2025',
+    summary:
+      '',
+    tags: ['Exoplanet', 'Transmission Spectroscopy'],
+    links: [
+      { label: 'DOI', href: 'https://doi.org/10.3847/1538-3881/ae019a' },
+      { label: 'PDF', href: 'https://iopscience.iop.org/article/10.3847/1538-3881/ae019a/pdf' }
+    ]
+  },
   {
     contribution: 'contributing',
     citationCount: null,
