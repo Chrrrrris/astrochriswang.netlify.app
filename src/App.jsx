@@ -86,7 +86,7 @@ const profile = {
   ]
 };
 
-const lastUpdated = 'May 16, 2026';
+const lastUpdated = 'July 13, 2026';
 
 const goatCounterAnalytics = {
   host: import.meta.env.VITE_GOATCOUNTER_HOST || 'astrochriswang.com',
