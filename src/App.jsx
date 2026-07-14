@@ -201,27 +201,64 @@ const publications = [
     contribution: 'lead',
     citationCount: null,
     year: '2026',
-    status: 'AJ',
-    title: 'A Comprehensive Analysis of the Panchromatic Transmission Spectrum of the Hot-Saturn WASP-96 b: Nondetection of Haze, Possible Sodium Limb Asymmetry, Stellar Characterization, and Formation History',
+    status: 'ApJL',
+    title: 'How Many Transiting Giant Planets Can JWST Search for Moons and Rotational Oblateness?',
     authors: [
       { name: 'Le-Chris Wang' },
-      { name: 'Zafar Rustamkulov' },
-      { name: 'David K. Sing' },
-      { name: 'Joshua Lothringer' },
-      { name: 'Patrick McCreery' },
-      { name: 'Daniel Thorngren' },
-      { name: 'Munazza K. Alam' }
+      { name: 'Joshua N. Winn' },
     ],
-    venue: 'The Astronomical Journal',
-    journalLine: '2026, Astronomical Journal',
-    identifier: 'astro-ph/2511.16771',
+    venue: 'Astrophysical Journal Letters',
+    journalLine: '2026, ApJL',
+    identifier: 'astro-ph/2607.09873',
     month: 'Mar 2026',
     summary:
-      'We detected water in the atmosphere of HAT-P-14 b using JWST NIRISS SOSS and NIRSpec observations.',
-    tags: ['Exoplanet', 'Transmission Spectroscopy'],
+      'We predict the number and properties of transiting giant planets that JWST can observe to search for moons and rotational oblateness.',
+    tags: ['Exoplanet', 'JWST', 'Transit Photometry', 'Demographics'],
     links: [
-      { label: 'DOI', href: 'https://doi.org/10.48550/arXiv.2511.16771' },
-      { label: 'PDF', href: 'https://arxiv.org/pdf/2511.16771' }
+      { label: 'DOI', href: 'https://doi.org/10.48550/arXiv.2607.09873' },
+      { label: 'PDF', href: 'https://arxiv.org/pdf/2607.09873' }
+    ]
+  },
+  {
+    contribution: 'lead',
+    citationCount: null,
+    year: '2026',
+    status: 'ApJL',
+    title: 'How Many Transiting Giant Planets Can JWST Search for Moons and Rotational Oblateness?',
+    authors: [
+      { name: 'Le-Chris Wang' },
+      { name: 'Joshua N. Winn' },
+    ],
+    venue: 'Astrophysical Journal Letters',
+    journalLine: '2026, ApJL',
+    identifier: 'astro-ph/2607.09873',
+    month: 'Mar 2026',
+    summary:
+      'We predict the number and properties of transiting giant planets that JWST can observe to search for moons and rotational oblateness.',
+    tags: ['Exoplanet', 'JWST', 'Transit Photometry', 'Demographics'],
+    links: [
+      { label: 'DOI', href: 'https://doi.org/10.48550/arXiv.2607.09873' },
+      { label: 'PDF', href: 'https://arxiv.org/pdf/2607.09873' }
+    ]
+  },
+  {
+    contribution: 'contributing',
+    citationCount: null,
+    year: '2026',
+    status: 'arXiv',
+    title: 'Mitigating Charge Migration in JWST NIRISS Reveals That KELT-7 b is a Metal-enriched Ultra-hot Jupiter Orbiting a Young Metal-rich Star',
+    authors: 
+    'Stephen Schmidt, Erin M. May, Joshua D. Lothringer et al.',
+    venue: 'arXiv',
+    journalLine: '2026, arXiv',
+    identifier: 'astro-ph/2607.06708',
+    month: 'Mar 2026',
+    summary:
+      'We present a mitigation strategy for charge migration in JWST NIRISS SOSS observations and apply it to KELT-7 b, revealing a metal-enriched atmosphere.',
+    tags: ['Exoplanet', 'JWST', 'Transmission Spectroscopy'],
+    links: [
+      { label: 'DOI', href: 'https://doi.org/10.48550/arXiv.2607.06708' },
+      { label: 'PDF', href: 'https://arxiv.org/pdf/2607.06708' }
     ]
   },
   {
