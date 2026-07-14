@@ -208,7 +208,7 @@ const publications = [
       { name: 'Joshua N. Winn' },
     ],
     venue: 'Astrophysical Journal Letters',
-    journalLine: '2026, ApJL',
+    journalLine: '2026, Astrophysical Journal Letters',
     identifier: 'astro-ph/2607.09873',
     month: 'Mar 2026',
     summary:
@@ -307,15 +307,15 @@ const publications = [
   {
     contribution: 'contributing',
     citationCount: null,
-    year: '2025',
+    year: '2026',
     status: 'Science',
     title: 'Cloudy Mornings and Clear Evenings on a Giant Extrasolar World',
     authors:
       'Sagnick Mukherjee, David K. Sing, Guangwei Fu, et al.',
     venue: 'Science',
-    journalLine: '2025, Science',
+    journalLine: '2026, Science',
     identifier: 'astro-ph/2505.10910',
-    month: 'May 2025',
+    month: 'May 2026',
     summary:
       'We report limb asymmetry in WASP-94A b, with a cloud-covered cooler morning limb and a clearer hotter evening limb.',
     tags: ['Exoplanet', 'Atmospheres', 'Transmission Spectroscopy'],
