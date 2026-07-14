@@ -223,22 +223,27 @@ const publications = [
     contribution: 'lead',
     citationCount: null,
     year: '2026',
-    status: 'ApJL',
-    title: 'How Many Transiting Giant Planets Can JWST Search for Moons and Rotational Oblateness?',
+    status: 'AJ',
+    title: 'A Comprehensive Analysis of the Panchromatic Transmission Spectrum of the Hot-Saturn WASP-96 b: Nondetection of Haze, Possible Sodium Limb Asymmetry, Stellar Characterization, and Formation History',
     authors: [
       { name: 'Le-Chris Wang' },
-      { name: 'Joshua N. Winn' },
+      { name: 'Zafar Rustamkulov' },
+      { name: 'David K. Sing' },
+      { name: 'Joshua Lothringer' },
+      { name: 'Patrick McCreery' },
+      { name: 'Daniel Thorngren' },
+      { name: 'Munazza K. Alam' }
     ],
-    venue: 'Astrophysical Journal Letters',
-    journalLine: '2026, ApJL',
-    identifier: 'astro-ph/2607.09873',
+    venue: 'The Astronomical Journal',
+    journalLine: '2026, Astronomical Journal',
+    identifier: 'astro-ph/2511.16771',
     month: 'Mar 2026',
     summary:
-      'We predict the number and properties of transiting giant planets that JWST can observe to search for moons and rotational oblateness.',
-    tags: ['Exoplanet', 'JWST', 'Transit Photometry', 'Demographics'],
+      'We detected water in the atmosphere of HAT-P-14 b using JWST NIRISS SOSS and NIRSpec observations.',
+    tags: ['Exoplanet', 'Transmission Spectroscopy'],
     links: [
-      { label: 'DOI', href: 'https://doi.org/10.48550/arXiv.2607.09873' },
-      { label: 'PDF', href: 'https://arxiv.org/pdf/2607.09873' }
+      { label: 'DOI', href: 'https://doi.org/10.48550/arXiv.2511.16771' },
+      { label: 'PDF', href: 'https://arxiv.org/pdf/2511.16771' }
     ]
   },
   {
