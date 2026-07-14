@@ -97,6 +97,10 @@ const goatCounterAnalytics = {
 
 const news = [
   {
+    date: 'June 1, 2026',
+    text: 'I am at Carnegie Observatory this summer working with Shreyas Vissapragada on exoplanet atmospheres with high resolution spectroscopy!'
+  },
+  {
     date: 'Sept 2, 2025',
     text: 'Started graduate school at Princeton University.'
   },
