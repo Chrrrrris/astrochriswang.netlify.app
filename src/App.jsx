@@ -202,6 +202,60 @@ const otherInterests = ['Photography', 'Singing/A Cappella', 'Soccer', 'Running'
 
 const publications = [
   {
+    contribution: 'contributing',
+    citationCount: null,
+    year: '2026',
+    status: 'AAS Journals',
+    title: 'A Clearer View of HAT-P-1 b: JWST NIRSpec G395H Reveals a Cloud-free Atmosphere of Water, Carbon Dioxide, and Possibly Hydrogen Sulfide',
+    authors: 'Reza Ashtari, Stephen P. Schmidt, Guangwei Fu et al.',
+    venue: 'AAS Journals',
+    journalLine: 'Submitted to AAS Journals',
+    identifier: '',
+    month: '',
+    summary:
+      '',
+    tags: ['Exoplanet', 'JWST', 'Transmission Spectroscopy'],
+    links: [
+    ]
+  },
+  {
+    contribution: 'contributing',
+    citationCount: null,
+    year: '2026',
+    status: 'AAS Journals',
+    title: 'A JWST transiting survey of FGK stellar limb darkening: empirical evidence for quadratic laws and atmospheric model comparisons',
+    authors: 'David K. Sing, Joshua D. Lothringer, Jeff A. Valenti et al.',
+    venue: 'AAS Journals',
+    journalLine: 'Submitted to AAS Journals',
+    identifier: '',
+    month: '',
+    summary:
+      '',
+    tags: ['Exoplanet', 'JWST', 'Transmission Spectroscopy', 'Exoplanet Host Stars', 'Transit Photometry'],
+    links: [
+    ]
+  },
+  {
+    contribution: 'lead',
+    citationCount: null,
+    year: '2026',
+    status: 'ApJ',
+    title: 'Elemental Abundance Trends with Condensation Temperature are Unrelated to Planet Formation',
+    authors: [
+      { name: 'Le-Chris Wang' },
+      { name: 'Kevin C. Schlaufman' },
+    ],
+    venue: 'Astrophysical Journal',
+    journalLine: 'Submitted to Astrophysical Journal',
+    identifier: '',
+    month: '',
+    summary:
+      '',
+    tags: ['Exoplanet', 'Planet Formation', 'Demographics', 'Exoplanet Host Stars'],
+    links: [
+    ]
+  },
+  {
     contribution: 'lead',
     citationCount: null,
     year: '2026',
@@ -257,7 +311,7 @@ const publications = [
     status: 'arXiv',
     title: 'Mitigating Charge Migration in JWST NIRISS Reveals That KELT-7 b is a Metal-enriched Ultra-hot Jupiter Orbiting a Young Metal-rich Star',
     authors: 
-    'Stephen Schmidt, Erin M. May, Joshua D. Lothringer et al.',
+    'Stephen P. Schmidt, Erin M. May, Joshua D. Lothringer et al.',
     venue: 'arXiv',
     journalLine: '2026, arXiv',
     identifier: 'astro-ph/2607.06708',
