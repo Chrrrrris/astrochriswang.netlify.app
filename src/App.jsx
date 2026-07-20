@@ -209,7 +209,7 @@ const publications = [
     title: 'A Clearer View of HAT-P-1 b: JWST NIRSpec G395H Reveals a Cloud-free Atmosphere of Water, Carbon Dioxide, and Possibly Hydrogen Sulfide',
     authors: 'Reza Ashtari, Stephen P. Schmidt, Guangwei Fu et al.',
     venue: 'AAS Journals',
-    journalLine: '2026,Submitted to AAS Journals',
+    journalLine: '2026, Submitted to AAS Journals',
     identifier: '',
     month: '',
     summary:
@@ -246,7 +246,7 @@ const publications = [
       { name: 'Kevin C. Schlaufman' },
     ],
     venue: 'Astrophysical Journal',
-    journalLine: '2026,Submitted to Astrophysical Journal',
+    journalLine: '2026, Submitted to Astrophysical Journal',
     identifier: '',
     month: '',
     summary:
