@@ -210,7 +210,7 @@ const publications = [
     authors: 'Le-Chris Wang, Sagnick Mukherjee, Stephen P. Schmidt et al.',
     venue: 'AAS Journals',
     journalLine: '2026, Submitted to ApJL',
-    identifier: '',
+    identifier: 'astro-ph/2608.19756',
     month: 'Aug 2026',
     summary:
       '',
