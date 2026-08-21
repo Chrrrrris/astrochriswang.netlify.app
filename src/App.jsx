@@ -80,13 +80,32 @@ const profile = {
   location: 'Princeton, NJ',
   email: 'lechris.wang@princeton.edu',
   bio: [
-    "My name is Le-Chris Wang. I am a first-year PhD student in the Department of Astrophysical Sciences at Princeton University. My research focuses on exoplanets, specifically their formation, demographics, and atmospheres.",
-    'I use numerical simulations to study theoretical outcomes of planet formation and a combination of space-based and ground-based observations to characterize exoplanets.',
-    'During my undergrad at Johns Hopkins, I worked with Prof. Kevin Schlaufman and Dr. Matthew Clement on theories of planet formation. I also worked with Prof. David Sing and Zafar Rustamkulov on exoplanet atmospheres with JWST and a variety of ground-based observatories.'
+    <>
+      My name is Le-Chris Wang. I am a second-year PhD student in the Department of
+      Astrophysical Sciences at Princeton University working with{' '}
+      <a href="https://web.astro.princeton.edu/people/joshua-winn">Prof. Joshua Winn</a> and{' '}
+      <a href="https://www.astroshrey.com/">Dr. Shreyas Vissapragada</a>. My research focuses
+      on exoplanets, specifically their formation, demographics, and atmospheres.
+    </>,
+    // 'I use a combination of space-based and ground-based observations to characterize exoplanets, numerical simulations to study theoretical outcomes of planet formation, and statistical methods to study exoplanet populations.',
+    <>
+      During my undergrad at Johns Hopkins, I worked with{' '}
+      <a href="https://www.kevinschlaufman.com/">
+        Prof. Kevin Schlaufman
+      </a>{' '}
+      and <a href="https://www.jhuapl.edu/people/matt-clement">Dr. Matthew Clement</a> on
+      theories of planet formation. I also worked with{' '}
+      <a href="https://physics-astronomy.jhu.edu/directory/david-sing/">Prof. David Sing</a>{' '}
+      and{' '}
+      <a href="https://scholar.google.com/citations?view_op=search_authors&mauthors=Zafar%20Rustamkulov">
+        Zafar Rustamkulov
+      </a>{' '}
+      on exoplanet atmospheres with JWST and a variety of ground-based observatories.
+    </>
   ]
 };
 
-const lastUpdated = 'July 13, 2026';
+const lastUpdated = 'Aug 20, 2026';
 
 const goatCounterAnalytics = {
   host: import.meta.env.VITE_GOATCOUNTER_HOST || 'astrochriswang.com',
@@ -1087,29 +1106,9 @@ function HomePage({ navigate }) {
           <div className="bio-text-panel">
             <h2 id="biography-heading">Biography</h2>
             <div className="prose">
-              <p>
-                My name is Le-Chris Wang (王乐). I am a first-year PhD student at{' '}
-                <a href="https://web.astro.princeton.edu/">
-                  Astrophysical Science Department of Princeton University
-                </a>
-                . My research focus is exoplanets, specifically their formation, dynamics, demographics, and
-                atmospheres. I use both numerical simulations to study the theoretical outcomes of
-                planet formation and a combination of space-based and ground-based observations to
-                characterize exoplanets.
-              </p>
-              <p>
-                During my undergrad at Hopkins, I worked with{' '}
-                <a href="http://www.kevinschlaufman.com/">Prof. Kevin Schlaufman</a> and{' '}
-                <a href="https://www.jhuapl.edu/about/people/matt-clement">
-                  Dr. Matthew Clement
-                </a>{' '}
-                on theories of planet formation. I also worked with{' '}
-                <a href="https://physics-astronomy.jhu.edu/directory/david-sing/">
-                  Prof. David Sing
-                </a>{' '}
-                and <a href="https://zafarrustamkulov.com/">Zafar Rustamkulov</a> on exoplanet
-                atmospheres with JWST and a variety of ground-based observatories.
-              </p>
+              {profile.bio.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
             </div>
             <div className="bio-meta-grid">
               <section>
