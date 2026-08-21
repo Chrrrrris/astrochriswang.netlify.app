@@ -202,6 +202,42 @@ const otherInterests = ['Photography', 'Singing/A Cappella', 'Soccer', 'Running'
 
 const publications = [
   {
+    contribution: 'lead',
+    citationCount: null,
+    year: '2026',
+    status: 'AAS Journals',
+    title: 'Asymmetric Aerosol Distribution on the Terminators of the Warm Saturn WASP-69 b Revealed by JWST NIRISS/SOSS',
+    authors: 'Le-Chris Wang, Sagnick Mukherjee, Stephen P. Schmidt et al.',
+    venue: 'AAS Journals',
+    journalLine: '2026, Submitted to ApJL',
+    identifier: '',
+    month: 'Aug 2026',
+    summary:
+      '',
+    tags: ['Exoplanet', 'JWST', 'Transmission Spectroscopy'],
+    links: [
+      { label: 'DOI', href: 'https://doi.org/10.48550/arXiv.2608.19756' },
+      { label: 'PDF', href: 'https://arxiv.org/pdf/2608.19756' }
+    ]
+  },
+  {
+    contribution: 'contributing',
+    citationCount: null,
+    year: '2026',
+    status: 'AAS Journals',
+    title: 'A JWST NIRISS/SOSS Transmission Spectrum of the Exo-Neptune HAT-P-11~b Reveals Aerosols and a High Metallicity In Agreement with the Mass-Metallicity Trend',
+    authors: 'Katherine A. Bennett, Lindsey S. Wiser, Mei Ting Mak et al.',
+    venue: 'AAS Journals',
+    journalLine: '2026, Submitted to AAS Journals',
+    identifier: '',
+    month: '',
+    summary:
+      '',
+    tags: ['Exoplanet', 'JWST', 'Transmission Spectroscopy'],
+    links: [
+    ]
+  },
+  {
     contribution: 'contributing',
     citationCount: null,
     year: '2026',
