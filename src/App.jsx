@@ -81,8 +81,7 @@ const profile = {
   email: 'lechris.wang@princeton.edu',
   bio: [
     <>
-      My name is Le-Chris Wang. I am a second-year PhD student in the Department of
-      Astrophysical Sciences at Princeton University working with{' '}
+      My name is Le-Chris Wang. I am a second-year PhD student in the <a href="https://web.astro.princeton.edu/">Department of Astrophysical Sciences</a> at <a href="https://www.princeton.edu/">Princeton University</a> working with{' '}
       <a href="https://web.astro.princeton.edu/people/joshua-winn">Prof. Joshua Winn</a> and{' '}
       <a href="https://www.astroshrey.com/">Dr. Shreyas Vissapragada</a>. My research focuses
       on exoplanets, specifically their formation, demographics, and atmospheres.
