@@ -24,6 +24,8 @@ import jwstImage from '../assets/media/JWST.jpg';
 import heroImage from '../assets/media/exo.jpg';
 import avatarImage from '../content/authors/admin/avatar.jpg';
 import arctosImage from '../content/project/ARCTOS/featured.JPG';
+import decanterImage from '../assets/media/albums/demo1/winered.png';
+
 import eznoteImage from '../content/project/EZ-Notes/featured.jpg';
 import astroPhotoImage from '../content/project/astrophoto/featured.jpg';
 import eclipseImage from '../content/project/astrophoto/Eclipse.jpg';
@@ -32,6 +34,11 @@ import ngc2403Image from '../content/project/astrophoto/NGC2403.JPG';
 import orionImage from '../content/project/astrophoto/Orion.jpg';
 import dailyPhotoTwo from '../assets/media/albums/demo1/IMG_0797.jpg';
 import dailyPhotoThree from '../assets/media/albums/demo1/IMG_0798.jpg';
+import shreyPhoto from '../assets/media/albums/demo1/shrey.jpg';
+import meLCO from '../assets/media/albums/demo1/LCO_me.jpg';
+
+import jessPhoto from '../assets/media/albums/demo1/jess.jpg';
+
 import princetonCohortPhoto from '../assets/media/albums/demo1/princeton.JPG';
 import kevinPhoto from '../assets/media/albums/demo1/kevin.jpg';
 import gordonPhoto from '../assets/media/albums/demo1/Gordon.JPG';
@@ -668,15 +675,15 @@ const projectGroups = [
         links: [{ label: 'Publications', href: '/publications/' }]
       },
       {
-        slug: 'arctos',
-        title: 'ARCTOS',
-        subtitle: 'Apache Point Observatory Reduction and Calibration Tool S',
+        slug: 'decanter',
+        title: 'decanter',
+        subtitle: 'Fast, pure-Python reduction of WINERED near-infrared echelle spectra.',
         summary:
-          'A custom data reduction pipeline for Apache Point Observatory data.',
+          'I helped develop the wavelength calibration and HRCCS routines for decanter',
         tags: ['Astronomy', 'Software', 'Data Reduction'],
-        year: '2024',
-        image: arctosImage,
-        action: { type: 'external', label: 'GitHub', href: 'https://github.com/Chrrrrris/ARCTOS' },
+        year: '2026',
+        image: decanterImage,
+        action: { type: 'external', label: 'GitHub', href: 'https://github.com/astroshrey/decanter' },
         detailSections: [
           {
             heading: 'Overview',
@@ -751,6 +758,8 @@ const photoCollections = [
     title: 'Gallery',
     description: '',
     photos: [
+      { title: 'I observed at the LCO in Chile in summer 2026 with Shreyas and Connor!', image: meLCO, description: '' },
+      { title: 'I had the pleasure of working with Dr. Shreyas Vissapragada over the summer, 2026!', image: shreyPhoto, description: '' },
       { title: 'My Princeton Astro Cohort; the best cohort ever', image: princetonCohortPhoto, description: '' },
       { title: 'Prof Kevin Schlaufman, JHU; my first research advisor', image: kevinPhoto, description: '' },
       { title: 'My first academic conference in my sophomore year, with Kevin', image: gordonPhoto, description: '' },
