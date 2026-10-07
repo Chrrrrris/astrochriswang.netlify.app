@@ -7,7 +7,7 @@ if (!token) {
 }
 
 const publications = [
-    {
+  {
     identifier: 'astro-ph/2608.28538',
     query: 'arXiv:2608.28538'
   },

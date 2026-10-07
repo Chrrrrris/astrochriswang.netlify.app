@@ -267,25 +267,6 @@ const publications = [
     citationCount: null,
     year: '2026',
     status: 'AAS Journals',
-    title: 'A Clearer View of HAT-P-1 b: JWST NIRSpec G395H Reveals a Cloud-free Atmosphere of Water, Carbon Dioxide, and Possibly Hydrogen Sulfide',
-    authors: 'Reza Ashtari, Stephen P. Schmidt, Guangwei Fu et al.',
-    venue: 'AAS Journals',
-    journalLine: '2026, Astronomical Journal',
-    identifier: 'astro-ph/2608.28538',
-    month: 'Aug 2026',
-    summary:
-      '',
-    tags: ['Exoplanet', 'JWST', 'Transmission Spectroscopy'],
-    links: [      
-      { label: 'DOI', href: 'https://doi.org/10.48550/arXiv.2608.28538' },
-      { label: 'PDF', href: 'https://arxiv.org/pdf/2608.28538' }
-    ]
-  },
-  {
-    contribution: 'contributing',
-    citationCount: null,
-    year: '2026',
-    status: 'AAS Journals',
     title: 'A JWST transiting survey of FGK stellar limb darkening: empirical evidence for quadratic laws and atmospheric model comparisons',
     authors: 'David K. Sing, Joshua D. Lothringer, Jeff A. Valenti et al.',
     venue: 'AAS Journals',
@@ -298,6 +279,25 @@ const publications = [
     links: [
       { label: 'DOI', href: 'https://doi.org/10.48550/arXiv.2609.00263' },
       { label: 'PDF', href: 'https://arxiv.org/pdf/2609.00263' }
+    ]
+  },
+    {
+    contribution: 'contributing',
+    citationCount: null,
+    year: '2026',
+    status: 'AAS Journals',
+    title: 'A Clearer View of HAT-P-1 b: JWST NIRSpec G395H Reveals a Cloud-free Atmosphere of Water, Carbon Dioxide, and Possibly Hydrogen Sulfide',
+    authors: 'Reza Ashtari, Stephen P. Schmidt, Guangwei Fu et al.',
+    venue: 'AAS Journals',
+    journalLine: '2026, Astronomical Journal',
+    identifier: 'astro-ph/2608.28538',
+    month: 'Aug 2026',
+    summary:
+      '',
+    tags: ['Exoplanet', 'JWST', 'Transmission Spectroscopy'],
+    links: [      
+      { label: 'DOI', href: 'https://doi.org/10.48550/arXiv.2608.28538' },
+      { label: 'PDF', href: 'https://arxiv.org/pdf/2608.28538' }
     ]
   },
   {
