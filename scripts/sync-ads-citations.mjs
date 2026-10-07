@@ -8,6 +8,26 @@ if (!token) {
 
 const publications = [
   {
+    identifier: 'astro-ph/2608.19756',
+    query: 'arXiv:2608.19756'
+  },
+  {
+    identifier: 'astro-ph/2607.09873',
+    query: 'arXiv:2607.09873'
+  },
+  {
+    identifier: 'astro-ph/2511.16771',
+    query: 'arXiv:2511.16771'
+  },
+  {
+    identifier: 'astro-ph/2607.06708',
+    query: 'arXiv:2607.06708'
+  },
+  {
+    identifier: 'doi:10.3847/1538-3881/ae019a',
+    query: 'doi:"10.3847/1538-3881/ae019a"'
+  },
+  {
     identifier: 'doi:10.3847/2041-8213/adf282',
     query: 'doi:"10.3847/2041-8213/adf282"'
   },

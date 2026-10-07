@@ -287,13 +287,15 @@ const publications = [
     title: 'A JWST transiting survey of FGK stellar limb darkening: empirical evidence for quadratic laws and atmospheric model comparisons',
     authors: 'David K. Sing, Joshua D. Lothringer, Jeff A. Valenti et al.',
     venue: 'AAS Journals',
-    journalLine: '2026, Submitted to AAS Journals',
-    identifier: '',
-    month: '',
+    journalLine: '2026, Astronomical Journal',
+    identifier: 'arXiv-ph/2609.00263',
+    month: 'Aug 2026',
     summary:
       '',
     tags: ['Exoplanet', 'JWST', 'Transmission Spectroscopy', 'Exoplanet Host Stars', 'Transit Photometry'],
     links: [
+      { label: 'DOI', href: 'https://doi.org/10.48550/arXiv.2609.00263' },
+      { label: 'PDF', href: 'https://arxiv.org/pdf/2609.00263' }
     ]
   },
   {
@@ -1185,6 +1187,13 @@ function PublicationsPage() {
   const contributingPublications = sortPublicationsReverseChronological(
     publications.filter((publication) => publication.contribution === 'contributing')
   );
+  const citationValues = Object.values(citationCounts).filter(
+    (count) => typeof count === 'number' && Number.isFinite(count)
+  );
+  const totalCitations = citationValues.reduce((total, count) => total + count, 0);
+  const hIndex = [...citationValues]
+    .sort((first, second) => second - first)
+    .reduce((index, count, position) => (count >= position + 1 ? position + 1 : index), 0);
 
   return (
     <main className="page-main">
@@ -1193,13 +1202,25 @@ function PublicationsPage() {
         title="Publications"
         description=""
         action={
-          <div className="scholarly-links">
-            {scholarlyLinks.map((link) => (
-              <a key={link.label} className="button secondary" href={link.href}>
-                {link.label}
-                <ArrowUpRight size={16} />
-              </a>
-            ))}
+          <div className="publication-header-actions">
+            <dl className="publication-metrics" aria-label="Citation metrics from NASA ADS">
+              <div>
+                <dd>{totalCitations}</dd>
+                <dt>Total citations</dt>
+              </div>
+              <div>
+                <dd>{hIndex}</dd>
+                <dt>h-index</dt>
+              </div>
+            </dl>
+            <div className="scholarly-links">
+              {scholarlyLinks.map((link) => (
+                <a key={link.label} className="button secondary" href={link.href}>
+                  {link.label}
+                  <ArrowUpRight size={16} />
+                </a>
+              ))}
+            </div>
           </div>
         }
       />
