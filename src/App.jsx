@@ -270,13 +270,15 @@ const publications = [
     title: 'A Clearer View of HAT-P-1 b: JWST NIRSpec G395H Reveals a Cloud-free Atmosphere of Water, Carbon Dioxide, and Possibly Hydrogen Sulfide',
     authors: 'Reza Ashtari, Stephen P. Schmidt, Guangwei Fu et al.',
     venue: 'AAS Journals',
-    journalLine: '2026, Submitted to AAS Journals',
-    identifier: '',
-    month: '',
+    journalLine: '2026, Astronomical Journal',
+    identifier: 'astro-ph/2608.28538',
+    month: 'Aug 2026',
     summary:
       '',
     tags: ['Exoplanet', 'JWST', 'Transmission Spectroscopy'],
-    links: [
+    links: [      
+      { label: 'DOI', href: 'https://doi.org/10.48550/arXiv.2608.28538' },
+      { label: 'PDF', href: 'https://arxiv.org/pdf/2608.28538' }
     ]
   },
   {
