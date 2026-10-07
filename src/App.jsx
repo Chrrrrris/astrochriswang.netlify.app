@@ -288,7 +288,7 @@ const publications = [
     authors: 'David K. Sing, Joshua D. Lothringer, Jeff A. Valenti et al.',
     venue: 'AAS Journals',
     journalLine: '2026, Astronomical Journal',
-    identifier: 'arXiv-ph/2609.00263',
+    identifier: 'astro-ph/2609.00263',
     month: 'Aug 2026',
     summary:
       '',
