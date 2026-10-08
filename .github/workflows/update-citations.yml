@@ -1,0 +1,45 @@
+name: Update ADS citations
+
+on:
+  schedule:
+    - cron: "17 9 * * 0"
+      timezone: "America/New_York"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-citations:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch citation counts
+        env:
+          ADS_TOKEN: ${{ secrets.ADS_TOKEN }}
+        run: npm run sync:citations
+
+      - name: Commit updated counts
+        run: |
+          if git diff --quiet -- src/citation-counts.json; then
+            echo "Citation counts have not changed."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- src/citation-counts.json
+          git commit -m "chore: refresh ADS citation counts"
+          git push
