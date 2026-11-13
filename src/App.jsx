@@ -311,13 +311,15 @@ const publications = [
       { name: 'Kevin C. Schlaufman' },
     ],
     venue: 'Astrophysical Journal',
-    journalLine: '2026, Submitted to Astrophysical Journal',
-    identifier: '',
+    journalLine: '2026, Astrophysical Journal',
+    identifier: 'astro-ph/2611.15902',
     month: '',
     summary:
       '',
     tags: ['Exoplanet', 'Planet Formation', 'Demographics', 'Exoplanet Host Stars'],
     links: [
+      { label: 'DOI', href: 'https://doi.org/10.48550/arXiv.2611.15902' },
+      { label: 'PDF', href: 'https://arxiv.org/pdf/2611.15902' }
     ]
   },
   {

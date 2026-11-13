@@ -1,9 +1,13 @@
 import { writeFile } from 'node:fs/promises';
 
-const token = process.env.ADS_TOKEN;
+const token = process.env.ADS_TOKEN?.trim();
 
 if (!token) {
   throw new Error('Set ADS_TOKEN before running npm run sync:citations.');
+}
+
+if (/[\r\n]/.test(token)) {
+  throw new Error('ADS_TOKEN must contain only the token on a single line.');
 }
 
 const publications = [
